@@ -6,6 +6,7 @@ in
   imports = [
     ./neovim
     ./zsh
+    ./kitty.nix
   ];
 
   home = {
@@ -23,6 +24,11 @@ in
 
   myModules = {
     zsh = {
+      enable = true;
+    };
+
+    # For terminfo
+    kitty = {
       enable = true;
     };
   };
