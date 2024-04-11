@@ -7,6 +7,7 @@
     nodePackages.typescript-language-server
     lua-language-server
     nixd
+    ruby-lsp
   ];
 
   programs.neovim = {

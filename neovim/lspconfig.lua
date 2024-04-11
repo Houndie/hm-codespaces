@@ -45,4 +45,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
+lspconfig.ruby_ls.setup {}
+
 -- Rust is handled by the rust-tools plugin

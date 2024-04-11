@@ -14,7 +14,7 @@ in
   config = lib.mkIf cfg.enable {
     home = {
       packages = [ pkgs.fira-code ];
-      file.".config/kitty/ssh.conf".text = cfg.sshConfig;
+      file.".terminfo/x/xterm-kitty".source = ./xterm-kitty;
     };
   
     programs.kitty = {
